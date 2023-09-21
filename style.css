@@ -8,6 +8,7 @@
     font-size: 62.5%;
 
     --moderate-violet: hsl(263, 55%, 52%);
+    --light-violet: hsl(263, 91%, 67%);
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --very-dark-blackish-blue: hsl(219, 29%, 14%);
     --white: hsl(0, 0%, 100%);
@@ -19,4 +20,48 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--light-gray);
+    font-size: 1.3rem;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 2.4rem 3.2rem;
+}
+
+.testimonial-1, .testimonial-2, .testimonial-3, .testimonial-4, .testimonial-5 {
+    border-radius: 1.2rem;
+    padding: 2.0rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.testimonial-1 {
+    background-color: var(--moderate-violet);
+}
+
+.testimonial-1 h2, .user-info h3 {
+    color: var(--light-grayish-blue);
+}
+
+.user {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.user img {
+    width: 4.0rem;
+    height: 4.0rem;
+    border: 2px solid var(--light-violet);
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
 }
