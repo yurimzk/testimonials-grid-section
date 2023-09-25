@@ -11,11 +11,13 @@
     --light-violet: hsl(263, 91%, 67%);
     --very-dark-grayish-blue: hsl(217, 19%, 35%);
     --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --very-dark-blackish-blue-50: hsla(219, 29%, 14%, 0.5);
+    --very-dark-blackish-blue-70: hsla(219, 29%, 14%, 0.7);
     --white: hsl(0, 0%, 100%);
+    --white-50: hsla(0, 0%, 100%, 0.5);
+    --white-70: hsla(0, 0%, 100%, 0.7);
 
     --light-gray: hsl(0, 0%, 81%);
-    --light-gray-50: hsla(0, 0%, 81%, 0.5);
-    --light-gray-70: hsla(0, 0%, 81%, 0.7);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
@@ -42,8 +44,11 @@ body {
 .user img {
     width: 4.0rem;
     height: 4.0rem;
-    border: 2px solid var(--light-violet);
     border-radius: 50%;
+}
+
+.user-1 img, .user-4 img {
+    border: 2px solid var(--light-violet);
 }
 
 .user-info {
@@ -52,15 +57,18 @@ body {
     gap: .2rem;
 }
 
-.user-info p {
-    color: var(--light-gray-50);
+.info-1 p, .info-2 p, .info-4 p {
+    color: var(--white-50);
+}
+
+.info-3 p,
+.info-5 p {
+    color: var(--very-dark-blackish-blue-50);
 }
 
 .testimonial p {
-    color: var(--light-gray-70);
     line-height: 160%;
     font-size: 1.4rem;
-    font-weight: 500;
 }
 
 .testimonial-1,
@@ -100,4 +108,13 @@ body {
 .user-name-3, .user-name-5, .callout-3,
 .callout-5 {
     color: var(--very-dark-blackish-blue);
+}
+
+.testimonial-1 .review, .testimonial-2 .review, .testimonial-4 .review {
+    color: var(--white-70);
+}
+
+.testimonial-3 .review, .testimonial-5 .review {
+    color: var(--very-dark-blackish-blue-70);
+    font-weight: 600;
 }
