@@ -75,9 +75,6 @@ body {
     gap: 1.6rem;
 }
 
-.testimonial-1 h2 {
-    color: var(--light-grayish-blue);
-} 
 .testimonial-1 {
     background-color: var(--moderate-violet);
 }
@@ -94,10 +91,13 @@ body {
     background-color: var(--very-dark-blackish-blue);
 }
 
-.user-name-1, .user-name-2, .user-name-4 {
+.user-name-1, .user-name-2, .user-name-4, .callout-1,
+.callout-2,
+.callout-4 {
     color: var(--white);
 }
 
-.user-name-3, .user-name-5 {
+.user-name-3, .user-name-5, .callout-3,
+.callout-5 {
     color: var(--very-dark-blackish-blue);
 }
