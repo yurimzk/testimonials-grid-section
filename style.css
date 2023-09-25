@@ -14,6 +14,7 @@
     --white: hsl(0, 0%, 100%);
 
     --light-gray: hsl(0, 0%, 81%);
+    --light-gray-50: hsla(0, 0%, 81%, 0.5);
     --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
@@ -28,22 +29,6 @@ body {
     flex-direction: column;
     gap: 1.6rem;
     margin: 2.4rem 3.2rem;
-}
-
-.testimonial-1, .testimonial-2, .testimonial-3, .testimonial-4, .testimonial-5 {
-    border-radius: 1.2rem;
-    padding: 2.0rem 2.4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-}
-
-.testimonial-1 {
-    background-color: var(--moderate-violet);
-}
-
-.testimonial-1 h2, .user-info h3 {
-    color: var(--light-grayish-blue);
 }
 
 .user {
@@ -64,4 +49,44 @@ body {
     display: flex;
     flex-direction: column;
     gap: .2rem;
+}
+
+.user-info p {
+    color: var(--light-gray-50);
+}
+
+.testimonial-1,
+.testimonial-2,
+.testimonial-3,
+.testimonial-4,
+.testimonial-5 {
+    border-radius: 1.2rem;
+    padding: 2.0rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.testimonial-1 {
+    background-color: var(--moderate-violet);
+}
+
+.testimonial-2 {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.testimonial-3 {
+    background-color: var(--light-grayish-blue);
+}
+
+.testimonial-4 {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.testimonial-5 {
+    background-color: var(--light-grayish-blue);
+}
+
+.testimonial-1 h2 {
+    color: var(--light-grayish-blue);
 }
